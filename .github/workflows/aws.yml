@@ -1,0 +1,7 @@
+env:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: test
+  ECS_SERVICE: my-test-task-service-vwkuc8js
+  ECS_CLUSTER: default
+  ECS_TASK_DEFINITION: task-definition.json 
+  CONTAINER_NAME: my-test-task
