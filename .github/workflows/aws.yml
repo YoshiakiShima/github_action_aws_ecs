@@ -11,7 +11,7 @@ env:
   ECS_SERVICE: my-test-task-service-vwkuc8js
   ECS_CLUSTER: default
   ECS_TASK_DEFINITION: task-definition.json 
-  CONTAINER_NAME: my-test-task
+  CONTAINER_NAME: my-web-app
 
 jobs:  # ← これが抜けているか、ズレているのが原因です！
   deploy:
