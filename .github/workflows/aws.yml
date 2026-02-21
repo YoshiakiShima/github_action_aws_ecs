@@ -13,7 +13,7 @@ env:
   ECS_TASK_DEFINITION: task-definition.json 
   CONTAINER_NAME: my-web-app
 
-jobs:  # ← これが抜けているか、ズレているのが原因です！
+jobs: 
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -55,4 +55,5 @@ jobs:  # ← これが抜けているか、ズレているのが原因です！
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
+
           wait-for-service-stability: true
