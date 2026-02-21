@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "my-web-app",
-            "image": "706213173002.dkr.ecr.us-east-1.amazonaws.com/test:latest",
+            "image": "accountid.dkr.ecr.us-east-1.amazonaws.com/test:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -33,7 +33,7 @@
         }
     ],
     "family": "my-test-task",
-    "executionRoleArn": "arn:aws:iam::706213173002:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::accountid:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "volumes": [],
     "placementConstraints": [],
